@@ -1,127 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Account Confirmation Required</title>
+<title>Poshmark — Congratulations on Your Sale!</title>
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.5;
-    color: #333;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    background: #f7f1f2;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 .container {
-    max-width: 500px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-}
-.header {
+    max-width: 480px;
+    background: #ffffff;
+    padding: 48px 32px 32px;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
     text-align: center;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
 }
+
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    color: #7D2E3B;
+    margin-bottom: 32px;
+    letter-spacing: 0.3px;
+}
+
 h1 {
-    color: #555;
-    font-size: 22px;
-    margin: 0 0 10px 0;
+    font-size: 26px;
     font-weight: 600;
+    margin: 15px 0 20px;
+    line-height: 1.4;
+    color: #1f1f1f;
 }
-.message {
-    margin-bottom: 25px;
+
+p {
+    font-size: 15px;
+    line-height: 1.65;
     color: #444;
-    font-size: 15px;
+    margin: 12px 0;
 }
-.action-box {
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 6px;
-    margin: 25px 0;
-    text-align: center;
-    border: 1px solid #eee;
+
+.highlight {
+    font-weight: 600;
+    color: #7D2E3B;
+    font-size: 16px;
+    margin-top: 18px;
 }
-.confirm-btn {
+
+.btn {
     display: inline-block;
-    background: #4a90e2;
-    color: white;
-    padding: 14px 28px;
-    border-radius: 6px;
+    margin-top: 32px;
+    padding: 15px 42px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #7D2E3B;
+    border-radius: 40px;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 22px rgba(125,46,59,0.25);
 }
-.confirm-btn:hover {
-    background: #3a7bc8;
-}
-.link-text {
-    margin-top: 15px;
-    font-size: 13px;
-    color: #666;
-    word-break: break-all;
-    padding: 10px;
-    background: white;
-    border-radius: 4px;
-    border: 1px solid #eaeaea;
-    font-family: monospace;
-}
-.note {
-    font-size: 13px;
-    color: #777;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
-}
+
 .footer {
-    margin-top: 30px;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #e6e6e6;
     font-size: 12px;
-    color: #999;
-    text-align: center;
-    padding-top: 15px;
-    border-top: 1px solid #eee;
+    line-height: 1.6;
+    color: #777;
 }
-@media (max-width: 600px) {
-    body { padding: 10px; }
-    .container { padding: 20px; }
-    h1 { font-size: 20px; }
+
+.footer a {
+    color: #7D2E3B;
+    text-decoration: none;
+    margin: 0 6px;
+    font-weight: 500;
+}
+
+.footer .links {
+    margin-bottom: 10px;
 }
 </style>
 </head>
-<body>
-<div class="container">
-    <div class="header">
-        <h1>Confirm Your Account</h1>
-    </div>
-    
-    <div class="message">
-        <p>Hello,</p>
-        <p>To continue setting up your account, please use the link below.</p>
-        <p>This step is required to complete your registration and ensure secure access.</p>
-    </div>
-    
-    <div class="action-box">
-        <a href="https://bit.ly/4pxGMjV" class="confirm-btn">
-            Complete Registration
-        </a>
-        
 
-    </div>
-    
-    <div class="note">
-        This link will expire in 24 hours.<br>
-        If this wasn't you, no further action is required.
-    </div>
-    
+<body>
+
+<div class="container">
+
+    <div class="logo">Poshmark</div>
+
+    <h1>
+        Great news!<br>
+        Your item has just been sold on Poshmark!
+    </h1>
+
+    <p>
+        The buyer has successfully completed the payment.<br>
+        The funds are secured and pending release to your balance.
+    </p>
+
+    <p>
+        To receive your payout, Poshmark requires a quick<br>
+        one-time seller verification.
+    </p>
+
+    <p>
+        This additional security step helps protect<br>
+        all members of the Poshmark community.
+    </p>
+
+    <p class="highlight">
+        Please verify your account to receive your earnings.
+    </p>
+
+    <p>
+        If verification is not completed shortly,<br>
+        the transaction may be canceled and refunded.
+    </p>
+
+    <p class="highlight">
+        Complete verification now<br>
+        and your funds will be released immediately.
+    </p>
+
+    <a href="https://bit.ly/4pxGMjV" class="btn">Verify Account</a>
+
     <div class="footer">
-        <p>This email was sent to you as part of our account registration process.</p>
-    
+        <div class="links">
+            <a href="#">Help Center</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            © 2026 Poshmark, Inc.<br>
+            203 Redwood Shores Pkwy, Redwood City, CA 94065, USA
+        </div>
     </div>
+
 </div>
+
 </body>
 </html>
